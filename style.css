@@ -1,0 +1,77 @@
+body { /*1 definir fonte, cor de fundo se necesário e margin 0 para quando usar imagem não ficar sobra*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #C7707F;
+    margin: 0;
+}
+.menu { /*2 trabalhar o header*/
+    background-image: url(butcher.jpg); /*inserir a imagem*/
+    height: 500px; /*determinar a altura da imagem*/
+    background-position: right center; /*caso esteja cortanto usar esse recurso para posicionar*/
+    background-size: cover; /*Aqui para que toda a imagem caiba na altura definida*/
+    border-top: 1px solid transparent; /*Usar somente se não preencher o topo*/
+}
+.titulo { /*3 trabalhar o texto dentro da imagem*/
+    text-align: center;
+    color: #C9B6BE;
+    margin-top: 200px;
+}
+.titulo h1 { /*4 trabalhar o texto principal*/
+    text-transform: uppercase;
+    font-size: 46px;
+    text-shadow: 3px 3px 5px black;
+}
+.titulo p { /*4.1 configurar o paragrafo*/
+    background-color: rgba(0,0,0, 0.6 );
+    display: inline-block; /*usa para não preencher a tele toda*/
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+.menu nav ul { /*6 trabalhar o menu*/
+    text-align: right;
+    margin: 20px 50px 0 0;
+}
+.menu nav li { /*6.1 deixar em linha e outros ajustes*/
+    display: inline-block; /*li tem comportamento de bloco por isso usa esse recurso para ficar em linha*/
+    list-style: none;
+    border: 1px solid black;
+    margin-left: 8px;
+
+}
+.menu nav a { /*6.2 trabalhar os links*/
+    background-color: rgba(99, 95, 95, 0.4);
+    padding: 10px;
+    display: block;
+    color: honeydew;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.menu nav a:hover { /*6.3 efeito de transição*/
+    background-color: rgba(99, 95, 95, 0.6);
+}
+main { /* 5 Todo conteúdo da página ficará centralizado e em 80% da página*/
+    width: 80%; 
+    margin: auto;
+}
+.content-section { /*5.1 ajustar os espaçamentos e definir uma cor*/
+    background-color: #d1becf;
+    padding: 15px;   /*Afastar um pouco o conteúdo*/
+    margin-top: 15px; /*Separar as duas secções*/
+}
+.card {
+    width: 30%;
+    display: inline-block;
+}
+.card img {
+    border-radius: 15px;
+}
+footer {
+    height: 60px; /*usar o mesmo valor no line height para centralizar*/
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    background-color: #878787;
+    line-height: 60px; /*Quando tem somente uma linha de texto esse comando serve para centralizar*/
+}
